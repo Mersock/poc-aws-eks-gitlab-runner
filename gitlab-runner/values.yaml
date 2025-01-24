@@ -17,6 +17,15 @@ gitlab-runner:
         url = "{{ .Values.gitlabUrl }}"
         executor = "kubernetes"
         builds_dir = "/tmp"
+        [runners.cache]
+          Type = "s3"
+          Shared = false
+          [runners.cache.s3]
+            AuthenticationType = iam
+            RoleARN = <RoleARN>
+            BucketName = "<BucketName>"
+            BucketLocation = "ap-southeast-1"   
+            Insecure = false
         [runners.kubernetes]
           privileged = false
           cpu_request = "500m"
