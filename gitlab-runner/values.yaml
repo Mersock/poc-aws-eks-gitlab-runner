@@ -22,7 +22,6 @@ gitlab-runner:
           Shared = false
           [runners.cache.s3]
             AuthenticationType = iam
-            RoleARN = <RoleARN>
             BucketName = "<BucketName>"
             BucketLocation = "ap-southeast-1"   
             Insecure = false
