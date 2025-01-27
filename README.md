@@ -43,7 +43,6 @@ trust policy poc-gitlab-runner
             "Effect": "Allow",
             "Principal": {
                 "Service": "pods.eks.amazonaws.com",
-                "AWS": "arn:aws:iam::340752821097:role/poc-gitlab-runner"
             },
             "Action": [
                 "sts:AssumeRole",
