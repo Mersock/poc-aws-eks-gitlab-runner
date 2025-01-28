@@ -1,10 +1,10 @@
 gitlab-runner:
   gitlabUrl: <url>
+  runnerToken: <token>
   rbac:
     clusterWideAccess: false
     create: true
     serviceAccountName: gitlab-runner
-  runnerToken: <token>
   runners:
     privileged: false
     serviceAccountName: gitlab-runner
