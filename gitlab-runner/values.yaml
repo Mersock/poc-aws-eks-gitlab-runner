@@ -21,7 +21,7 @@ gitlab-runner:
           Type = "s3"
           Shared = false
           [runners.cache.s3]
-            AuthenticationType = iam
+            AuthenticationType = "iam"
             BucketName = "<BucketName>"
             BucketLocation = "ap-southeast-1"   
             Insecure = false
